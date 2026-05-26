@@ -1,69 +1,101 @@
-body{
+body {
   font-family: sans-serif;
   margin: 0;
-  background: #f5f7fb;
+  background-color: #f5f7fb;
   color: #333;
 }
 
-/* ヒーローエリア */
-header{
-  background: #3498db;
-  color: white;
+/* ナビゲーション */
+nav {
+  background-color: white;
+  padding: 15px;
   text-align: center;
-  padding: 60px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-header h1{
+nav a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+/* ヒーローエリア */
+header {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+header h1 {
   font-size: 36px;
   margin-bottom: 15px;
 }
 
-header p{
+header p {
   font-size: 18px;
   line-height: 1.8;
 }
 
 /* ボタン */
-.btn{
+.button-area {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.btn {
   display: inline-block;
-  background: white;
+  background-color: white;
   color: #3498db;
   padding: 12px 24px;
-  margin-top: 20px;
   border-radius: 999px;
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
 }
 
-.btn:hover{
-  background: #217dbb;
+.btn:hover {
+  background-color: #217dbb;
   color: white;
 }
 
-/* セクション */
-section{
+.sub-btn {
+  background-color: #217dbb;
+  color: white;
+}
+
+.sub-btn:hover {
+  background-color: white;
+  color: #3498db;
+}
+
+/* セクション共通 */
+section {
   max-width: 900px;
   margin: 50px auto;
   padding: 0 20px;
   text-align: center;
 }
 
-section h2{
+section h2 {
   color: #3498db;
   margin-bottom: 30px;
 }
 
 /* カード横並び */
-.cards{
+.cards {
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.card{
-  background: white;
+.card {
+  background-color: white;
   width: 240px;
   padding: 25px;
   border-radius: 16px;
@@ -71,34 +103,45 @@ section h2{
   transition: 0.3s;
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.14);
 }
 
-.card h3{
+.card h3 {
   color: #3498db;
 }
 
-.card p{
+.card p {
   line-height: 1.8;
   text-align: left;
 }
 
 /* メッセージ */
-.message{
-  background: white;
+.message {
+  background-color: white;
   padding: 40px 20px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.message p{
+.message p {
+  line-height: 1.8;
+}
+
+/* お問い合わせ */
+.contact {
+  background-color: #eaf6ff;
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+
+.contact p {
   line-height: 1.8;
 }
 
 /* フッター */
-footer{
+footer {
   text-align: center;
   background: #333;
   color: white;
